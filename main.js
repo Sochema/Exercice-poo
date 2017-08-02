@@ -35,12 +35,26 @@ var listes = {
     } else {
       alert("Bienvenue");
     }
+  },
+
+  getPays : function(){
+    var x;
+    for (x in listes){
+      user.pays.toUpperCase();
+
+      if (user.pays = listes.paysAutorise[x]){
+        alert("Votre pays" + " " + user.pays + " " + "est dans la liste des pays autorisés.");
+      } else {
+        alert("Votre pays n'est pas dans la liste des pays autorisés");
+      }
+
+    }
   }
 
 }
 
 listes.getAge();
-
+listes.getPays();
 
 
 

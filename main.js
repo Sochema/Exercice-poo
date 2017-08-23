@@ -119,7 +119,7 @@ function Magic(name, attaque, defense, sante, mana) {
 var Magicien = new Magic("Sylvain", 25, 1, 100, 50);
 
 setInterval(function() {
-  (Magicien.sante !== 0 && Guerrier1.sante !== 0 && Guerrier2.sante !== 0) {
+  while(Magicien.sante !== 0 && Guerrier1.sante !== 0 && Guerrier2.sante !== 0) {
     Magicien.bataille(Guerrier1);
     Magicien.bataille(Guerrier2);
     Guerrier1.bataille(Magicien);
@@ -129,3 +129,7 @@ setInterval(function() {
 }, 500);
 
 Magicien.soin();
+
+
+
+//EXERCICE3

@@ -17,6 +17,7 @@ function recuperer() {
   var x = new formulaire(texte[0], texte[1], texte[2]);
   console.log(x);
   create();
+  reset();
 };
 
 function create(){
@@ -32,7 +33,8 @@ function create(){
 }
 
 function reset(){
+  for (i = 0; i < valeur.length; i++) {
+    valeur[i].value = "";
+  }
   texte = [];
 }
-
-console.log(texte);

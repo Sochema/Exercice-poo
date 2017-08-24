@@ -4,43 +4,47 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+    <title>Formulaire</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
 
+<header>
+  <h1>FORMULAIRE</h1>
+</header>
+
+  <div class="form-group">
+    <label for="titre">Titre:</label>
+    <input class="form-control" rows="5" id="titre"></input>
+  </div>
+
+  <div class="form-group">
+    <label for="phrase">Phrase d'accroche:</label>
+    <input class="form-control" rows="5" id="phrase"></input>
+  </div>
+
+  <div class="form-group">
+    <label for="description">Description produit:</label>
+    <input class="form-control" rows="5" id="description"></input>
+  </div>
+
+  <button type="button" class="btn btn-outline-danger" onclick="recuperer()">Envoyer</button>
 
 
-    <div id="calculatrice">
-        <div class="operation">
+<div id="carte">
 
-        </div>
 
-        <div class="touche">
-          <div class="chiffre">
-    
-          </div>
-
-          <div class="opérateur">
-
-          </div>
-
-          <div class="supprimer">
-
-          </div>
-        </div>
-
-    </div>
-
+</div>
 
 
 
@@ -50,7 +54,7 @@
         window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
     </script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

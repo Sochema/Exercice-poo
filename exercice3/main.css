@@ -16,14 +16,43 @@ html {
     line-height: 1.4;
 }
 
+h1 {
+  font-size: 200%;
+  text-align: center;
 
-#calculatrice {
-  border: 2px solid black;
-  width: 50%;
 }
 
+.form-group {
+   width: 65%;
+   margin: auto;
+}
 
+.btn {
+  margin: auto;
+  display: flex;
 
+}
+
+#carte {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boite {
+  background-color: #FCCDE2;
+  border-radius: 5%;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 30%;
+  border: 2px solid black;
+}
+
+.boite p {
+  text-align: center;
+  text-transform: uppercase;
+
+}
 
 
 
